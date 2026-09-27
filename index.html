@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Počasie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Počasie</h1>
+    <form id="search">
+      <input id="city" type="search" placeholder="Zadaj mesto, napr. Bratislava" autocomplete="off" required>
+      <button type="submit">Hľadať</button>
+    </form>
+
+    <p id="status" role="status"></p>
+
+    <section id="result" hidden>
+      <h2 id="place"></h2>
+      <div class="now">
+        <span id="icon" class="icon"></span>
+        <span id="temp" class="temp"></span>
+      </div>
+      <p id="desc" class="desc"></p>
+      <ul class="details">
+        <li>Pocitová teplota <strong id="feels"></strong></li>
+        <li>Vlhkosť <strong id="humidity"></strong></li>
+        <li>Vietor <strong id="wind"></strong></li>
+      </ul>
+      <h3>Najbližšie dni</h3>
+      <ol id="days" class="days"></ol>
+    </section>
+
+    <footer>Dáta: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
