@@ -16,3 +16,11 @@ Jednoduchá webová stránka: zadáš mesto do vyhľadávania a zobrazí sa aktu
 ## Lokálne spustenie
 
 Stačí otvoriť `index.html` v prehliadači.
+
+## Android aplikácia
+
+Pri každej zmene na vetve `main` GitHub Actions zostaví Android aplikáciu (Capacitor) a zverejní ju v **Releases**.
+
+- Stiahnutie najnovšej verzie: https://github.com/jurozachar-rgb/Weather/releases/latest/download/Pocasie.apk
+- Otvor súbor v telefóne a pri prvej inštalácii povoľ inštaláciu z neznámych zdrojov.
+- Aplikácia je podpísaná stálym testovacím kľúčom (`android-signing/`), takže nové verzie sa nainštalujú cez staré. Pre Google Play by bol potrebný vlastný tajný kľúč.
